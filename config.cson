@@ -3,3 +3,26 @@
     userId: "109212cb-99c9-0f89-4d2d-7b9cda433ccb"
   welcome:
     showOnStartup: false
+  core:
+    themes: [
+      "atom-material-ui"
+      "atom-material-syntax"
+    ]
+  editor:
+    invisibles: {}
+    fontSize: 13
+  "atom-material-ui":
+    tabs:
+      rippleAccentColor: true
+      tabSize: "Small"
+      showTabIcons: "Show on active tab"
+    ui:
+      accentColor: "Cyan"
+    fonts:
+      fontSize: "Big"
+      useRobotoInUI: true
+    treeView:
+      compactTreeView: true
+    panels:
+      depth: true
+      panelContrast: true
