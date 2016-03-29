@@ -1,22 +1,31 @@
 "*":
   "atom-material-ui":
-    fonts:
-      fontSize: "Big"
-      useRobotoInUI: true
-    panels:
-      depth: true
-      panelContrast: true
+    colors:
+      abaseColor:
+        red: 0
+        green: 172
+        blue: 193
+        alpha: 1
+      accentColor:
+        red: 25
+        green: 253
+        blue: 255
+        alpha: 1
+      predefinedColor: "Cyan"
+    fonts: {}
     tabs:
-      rippleAccentColor: true
-      showTabIcons: "Show on active tab"
-      tabSize: "Small"
+      compactTabs: true
     treeView:
-      compactTreeView: true
+      compactList: true
     ui:
-      accentColor: "Cyan"
+      panelContrast: true
+      panelShadows: true
   "atom-typescript": {}
   core:
     closeEmptyWindows: false
+    disabledPackages: [
+      "linter-sass-lint"
+    ]
     openEmptyEditorOnStart: false
     projectHome: "/Users/jubal/Projects"
     themes: [
@@ -37,6 +46,11 @@
     altGotoDefinition: true
     autoStartOnCompatibleFile: false
     enableAdvancedFileNew: false
+  "terminal-plus":
+    core: {}
+    style: {}
+    toggles:
+      autoClose: true
   "tree-view": {}
   welcome:
     showOnStartup: false

@@ -21,18 +21,36 @@
 # https://atom.io/docs/latest/using-atom-basic-customization#cson
 '.text.html':
   'html':
-    'prefix': 'html'
+    'prefix': 'html:5'
     'body': """
       <!doctype html>
       <html lang="en">
       <head>
-        <meta charset="UTF-8" />
-        <title>${1:Untitled}</title>
         <base href="/" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        ${1:<!-- meta -->}
       </head>
       <body>
-        ${2:Hello World}  
+        ${2}
       </body>
       </html>
+    """
+  'meta: open graph':
+    'prefix': 'meta:og'
+    'body': """
+        <meta property="og:title" content="${1}">
+        <meta property="og:site_name" content="${2}">
+        <meta property="og:url" content="${3}">
+        <meta property="og:description" content="${4}">
+        <meta property="fb:app_id" content="${5}">
+        <meta property="og:type" content="${6:website}">
+    """
+  'meta: default':
+    'prefix': 'meta:default'
+    'body': """
+        <meta charset="utf-8">
+        <meta name="description" content="${2}">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="${3}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>${1}</title>
     """
